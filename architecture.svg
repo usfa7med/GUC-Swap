@@ -1,0 +1,431 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 4950" width="100%" height="100%" style="background-color: #0d1117; font-family: system-ui;">
+<defs>
+<!-- Arrowheads -->
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#8b949e"/>
+</marker>
+<marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#3b82f6"/>
+</marker>
+<marker id="arrow-orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#f97316"/>
+</marker>
+<marker id="arrow-emerald" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#10b981"/>
+</marker>
+<marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#8b5cf6"/>
+</marker>
+</defs>
+<style>
+.layer-box { fill: none; stroke-width: 2; stroke-dasharray: 8 8; }
+.layer-title { font-family: system-ui, system-ui, sans-serif; font-size: 24px; font-weight: 800; text-anchor: middle; letter-spacing: 1px; }
+.layer-subtitle { font-family: Arial, system-ui, sans-serif; font-size: 16px; font-weight: 600; text-anchor: middle; fill: #8b949e; }
+.panel { fill: #161b22; stroke: #30363d; stroke-width: 2; rx: 12; }
+.panel-header { font-family: system-ui, system-ui, sans-serif; font-size: 18px; font-weight: 700; text-anchor: middle; }
+.text-main { font-family: Arial, system-ui, sans-serif; fill: #f0f6fc; font-size: 15px; font-weight: 500; }
+.text-sub { font-family: Arial, system-ui, sans-serif; fill: #8b949e; font-size: 14px; font-weight: 400; }
+.text-mono { font-family: ui-monospace, monospace; font-size: 13px; fill: #8b949e; }
+.line { stroke: #8b949e; stroke-width: 2; fill: none; }
+.line-dashed { stroke: #8b949e; stroke-width: 2; fill: none; stroke-dasharray: 6 4; }
+.bullet { font-family: Arial, system-ui, sans-serif; fill: #8b949e; font-size: 14px; font-weight: bold; }
+</style>
+<!-- ① CLIENT / BROWSER LAYER -->
+<rect x="40" y="40" width="1120" height="980" class="layer-box" fill="#3b82f608" stroke="#3b82f6" rx="16"/>
+<rect x="40" y="40" width="1120" height="70" fill="#3b82f6" fill-opacity="0.1" rx="16"/>
+<text x="600" y="75" class="layer-title" fill="#60a5fa">① CLIENT / BROWSER LAYER</text>
+<text x="600" y="100" class="layer-subtitle">React 19 + TypeScript + Vite SPA</text>
+<!-- Top 3 Panels -->
+<!-- Vite Build -->
+<rect x="100" y="150" width="280" height="180" class="panel" stroke="#60a5fa"/>
+<text x="240" y="185" class="panel-header" fill="#60a5fa">Vite Build</text>
+<line x1="100" y1="200" x2="380" y2="200" class="line" stroke="#60a5fa55"/>
+<text x="120" y="230" class="bullet">•</text><text x="140" y="230" class="text-main">TypeScript</text>
+<text x="120" y="260" class="bullet">•</text><text x="140" y="260" class="text-main">Bundling</text>
+<text x="120" y="290" class="bullet">•</text><text x="140" y="290" class="text-main">Production build</text>
+<path d="M 380 240 L 440 240" class="line" marker-end="url(#arrow-blue)" stroke="#3b82f6"/>
+<!-- React Router DOM -->
+<rect x="460" y="150" width="280" height="180" class="panel" stroke="#60a5fa"/>
+<text x="600" y="185" class="panel-header" fill="#60a5fa">React Router DOM v7</text>
+<line x1="460" y1="200" x2="740" y2="200" class="line" stroke="#60a5fa55"/>
+<text x="480" y="230" class="bullet">•</text><text x="500" y="230" class="text-main">PublicRoute</text>
+<text x="480" y="260" class="bullet">•</text><text x="500" y="260" class="text-main">ProtectedRoute</text>
+<text x="480" y="290" class="bullet">•</text><text x="500" y="290" class="text-main">Route state</text>
+<path d="M 740 240 L 800 240" class="line" marker-end="url(#arrow-blue)" stroke="#3b82f6"/>
+<path d="M 600 330 L 600 370" class="line" marker-end="url(#arrow-blue)" stroke="#3b82f6"/>
+<!-- Lazy Loaded Pages -->
+<rect x="820" y="150" width="280" height="300" class="panel" stroke="#60a5fa"/>
+<text x="960" y="185" class="panel-header" fill="#60a5fa">Lazy Loaded Page Modules</text>
+<line x1="820" y1="200" x2="1100" y2="200" class="line" stroke="#60a5fa55"/>
+<text x="840" y="230" class="bullet">•</text><text x="860" y="230" class="text-main">Landing</text>
+<text x="840" y="255" class="bullet">•</text><text x="860" y="255" class="text-main">Login &amp; Register</text>
+<text x="840" y="280" class="bullet">•</text><text x="860" y="280" class="text-main">Dashboard</text>
+<text x="840" y="305" class="bullet">•</text><text x="860" y="305" class="text-main">Profile &amp; Settings</text>
+<text x="840" y="330" class="bullet">•</text><text x="860" y="330" class="text-main">Password Reset</text>
+<text x="840" y="355" class="bullet">•</text><text x="860" y="355" class="text-main">2FA &amp; Demo</text>
+<text x="840" y="380" class="bullet">•</text><text x="860" y="380" class="text-main">Legal pages &amp; etc.</text>
+<!-- Auth Layer -->
+<rect x="460" y="380" width="280" height="150" class="panel" stroke="#60a5fa"/>
+<text x="600" y="415" class="panel-header" fill="#60a5fa">Authentication Layer</text>
+<line x1="460" y1="430" x2="740" y2="430" class="line" stroke="#60a5fa55"/>
+<text x="480" y="460" class="bullet">•</text><text x="500" y="460" class="text-main">AuthContext</text>
+<text x="480" y="485" class="bullet">•</text><text x="500" y="485" class="text-main">Bootstrap Promise</text>
+<text x="480" y="510" class="bullet">•</text><text x="500" y="510" class="text-main">Session Check</text>
+<!-- Connections to Managers -->
+<path d="M 600 530 L 600 560" class="line"/>
+<path d="M 240 560 L 960 560" class="line"/>
+<path d="M 240 560 L 240 590" class="line" marker-end="url(#arrow)"/>
+<path d="M 600 560 L 600 590" class="line" marker-end="url(#arrow)"/>
+<path d="M 960 560 L 960 590" class="line" marker-end="url(#arrow)"/>
+<!-- AuthSessionManager -->
+<rect x="100" y="600" width="280" height="170" class="panel" stroke="#60a5fa"/>
+<text x="240" y="635" class="panel-header" fill="#60a5fa">AuthSessionManager</text>
+<line x1="100" y1="650" x2="380" y2="650" class="line" stroke="#60a5fa55"/>
+<text x="120" y="680" class="bullet">•</text><text x="140" y="680" class="text-main">Wizard persistence</text>
+<text x="120" y="705" class="bullet">•</text><text x="140" y="705" class="text-main">sessionStorage</text>
+<text x="120" y="730" class="bullet">•</text><text x="140" y="730" class="text-main">Route cleanup</text>
+<text x="120" y="755" class="bullet">•</text><text x="140" y="755" class="text-main">Auth flow state</text>
+<!-- Profile Cache -->
+<rect x="460" y="600" width="280" height="140" class="panel" stroke="#60a5fa"/>
+<text x="600" y="635" class="panel-header" fill="#60a5fa">Profile Cache</text>
+<line x1="460" y1="650" x2="740" y2="650" class="line" stroke="#60a5fa55"/>
+<text x="480" y="680" class="bullet">•</text><text x="500" y="680" class="text-main">profileCache / Promise</text>
+<text x="480" y="705" class="bullet">•</text><text x="500" y="705" class="text-main">Request dedupe</text>
+<text x="480" y="730" class="bullet">•</text><text x="500" y="730" class="text-main">Logout invalidation</text>
+<!-- UI / Global Providers -->
+<rect x="820" y="600" width="280" height="170" class="panel" stroke="#60a5fa"/>
+<text x="960" y="635" class="panel-header" fill="#60a5fa">UI / Global Providers</text>
+<line x1="820" y1="650" x2="1100" y2="650" class="line" stroke="#60a5fa55"/>
+<text x="840" y="680" class="bullet">•</text><text x="860" y="680" class="text-main">HelmetProvider</text>
+<text x="840" y="705" class="bullet">•</text><text x="860" y="705" class="text-main">ThemeProvider</text>
+<text x="840" y="730" class="bullet">•</text><text x="860" y="730" class="text-main">MotionConfig</text>
+<text x="840" y="755" class="bullet">•</text><text x="860" y="755" class="text-main">ReactLenis</text>
+<!-- Connection to Fetch Interceptor -->
+<path d="M 600 740 L 600 790" class="line" marker-end="url(#arrow)"/>
+<!-- Global Fetch Interceptor -->
+<rect x="350" y="800" width="500" height="80" class="panel" stroke="#3b82f6"/>
+<text x="600" y="835" class="panel-header" fill="#60a5fa">GLOBAL fetch() INTERCEPTOR</text>
+<text x="600" y="860" class="text-sub" text-anchor="middle">monkey-patched fetch API wrapper</text>
+<!-- Obfuscation Split -->
+<path d="M 600 880 L 600 900" class="line"/>
+<path d="M 400 900 L 800 900" class="line"/>
+<path d="M 400 900 L 400 920" class="line" marker-end="url(#arrow)"/>
+<path d="M 800 900 L 800 920" class="line" marker-end="url(#arrow)"/>
+<text x="385" y="915" class="text-sub" text-anchor="end" font-weight="bold">OUTGOING REQUEST</text>
+<text x="815" y="915" class="text-sub" text-anchor="start" font-weight="bold">INCOMING RESPONSE</text>
+<!-- Obfuscation Payload Box -->
+<rect x="280" y="930" width="240" height="90" class="panel"/>
+<text x="400" y="960" class="panel-header" fill="#f0f6fc">Payload Obfuscation</text>
+<text x="400" y="985" class="text-sub" text-anchor="middle">Shared Key Encryption</text>
+<text x="380" y="1050" class="text-mono" text-anchor="end" fill="#60a5fa">JSON payload →</text>
+<!-- Deobfuscation Payload Box -->
+<rect x="680" y="930" width="240" height="90" class="panel"/>
+<text x="800" y="960" class="panel-header" fill="#f0f6fc">Payload Deobfuscation</text>
+<text x="800" y="985" class="text-sub" text-anchor="middle">Shared Key Decryption</text>
+<text x="820" y="1050" class="text-mono" text-anchor="start" fill="#60a5fa">← octet-stream</text>
+<!-- Cross-Boundary Arrow -->
+<path d="M 400 1020 L 400 1080" class="line" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrow-blue)"/>
+<path d="M 800 1080 L 800 1020" class="line" stroke="#3b82f6" stroke-width="3" marker-end="url(#arrow-blue)"/>
+<text x="420" y="1070" class="text-mono" fill="#60a5fa">application/octet-stream</text>
+<!-- ② NETWORK LAYER -->
+<rect x="40" y="1090" width="1120" height="150" class="layer-box" fill="#f9731608" stroke="#f97316" rx="16"/>
+<rect x="40" y="1090" width="1120" height="70" fill="#f97316" fill-opacity="0.1" rx="16"/>
+<text x="600" y="1125" class="layer-title" fill="#fb923c">② EDGE / NETWORK LAYER</text>
+<text x="600" y="1150" class="layer-subtitle">HTTPS / TLS / Edge Network</text>
+<rect x="400" y="1170" width="400" height="60" class="panel" stroke="#f97316"/>
+<text x="600" y="1205" class="panel-header" fill="#fb923c">The GUC Swap API</text>
+<path d="M 600 1230 L 600 1290" class="line" stroke-width="3" stroke="#f97316" marker-end="url(#arrow-orange)"/>
+<!-- ③ EDGE MIDDLEWARE PIPELINE -->
+<rect x="40" y="1300" width="1120" height="1780" class="layer-box" fill="#eab30808" stroke="#eab308" rx="16"/>
+<rect x="40" y="1300" width="1120" height="70" fill="#eab308" fill-opacity="0.1" rx="16"/>
+<text x="600" y="1335" class="layer-title" fill="#facc15">③ EDGE MIDDLEWARE PIPELINE</text>
+<text x="600" y="1360" class="layer-subtitle">Sequential Request Processing</text>
+<text x="590" y="1395" class="text-main" font-weight="bold" fill="#facc15">REQUEST</text>
+<path d="M 600 1400 L 600 1430" class="line" stroke="#facc15" marker-end="url(#arrow)"/>
+<!-- 1. Security Headers -->
+<rect x="250" y="1440" width="700" height="190" class="panel" stroke="#facc15"/>
+<text x="600" y="1475" class="panel-header" fill="#facc15">SECURITY HEADERS</text>
+<line x1="250" y1="1490" x2="950" y2="1490" class="line" stroke="#facc1555"/>
+<text x="280" y="1520" class="text-mono">HSTS</text>
+<text x="280" y="1545" class="text-mono">X-Content-Type-Options: nosniff</text>
+<text x="280" y="1570" class="text-mono">X-Frame-Options: DENY</text>
+<text x="280" y="1595" class="text-mono">X-XSS-Protection</text>
+<text x="620" y="1520" class="text-mono">COOP: same-origin</text>
+<text x="620" y="1545" class="text-mono">CORP: same-origin</text>
+<text x="620" y="1570" class="text-mono">Origin-Agent-Cluster / CSP</text>
+<text x="620" y="1595" class="text-mono">Referrer-Policy / Permissions-Policy</text>
+<text x="600" y="1620" class="text-sub" text-anchor="middle" font-style="italic">Remove X-Powered-By / Server / X-AspNet-Version</text>
+<path d="M 600 1630 L 600 1660" class="line" marker-end="url(#arrow)"/>
+<!-- 2. CORS -->
+<rect x="250" y="1670" width="700" height="120" class="panel" stroke="#facc15"/>
+<text x="600" y="1705" class="panel-header" fill="#facc15">CORS POLICY</text>
+<line x1="250" y1="1720" x2="950" y2="1720" class="line" stroke="#facc1555"/>
+<text x="280" y="1750" class="text-mono">Allowed Origin: https://www.gucswap.com</text>
+<text x="280" y="1775" class="text-mono">credentials: true</text>
+<text x="920" y="1775" class="text-sub" text-anchor="end" font-style="italic">Prevents unauthorized origin APIs</text>
+<path d="M 600 1790 L 600 1820" class="line" marker-end="url(#arrow)"/>
+<!-- 3. Rate Limiting -->
+<rect x="250" y="1830" width="700" height="230" class="panel" stroke="#facc15"/>
+<text x="600" y="1865" class="panel-header" fill="#facc15">RATE LIMITING</text>
+<line x1="250" y1="1880" x2="950" y2="1880" class="line" stroke="#facc1555"/>
+<rect x="280" y="1895" width="300" height="90" rx="6" fill="#161b22" stroke="#30363d"/>
+<text x="430" y="1920" class="panel-header" fill="#f0f6fc">Redis</text>
+<text x="430" y="1945" class="text-mono" text-anchor="middle">INCR + EXPIRE</text>
+<text x="430" y="1970" class="text-main" text-anchor="middle">Distributed counters</text>
+<rect x="620" y="1895" width="300" height="90" rx="6" fill="#161b22" stroke="#30363d"/>
+<text x="770" y="1920" class="panel-header" fill="#8b949e">In-Memory Map (FALLBACK)</text>
+<text x="770" y="1945" class="text-mono" text-anchor="middle">TTL expiry</text>
+<text x="770" y="1970" class="text-sub" text-anchor="middle">Sweep cleanup</text>
+<text x="600" y="2010" class="text-mono" text-anchor="middle" fill="#8b949e">IP: CF-Connecting-IP → X-Real-IP fallback</text>
+<text x="600" y="2035" class="text-mono" text-anchor="middle">Route Windows: Login (m+h+d) | Register/Forget (m+h/d) | Dashboard (m+h)</text>
+<path d="M 600 2060 L 600 2090" class="line" marker-end="url(#arrow)"/>
+<!-- 4. Turnstile -->
+<rect x="250" y="2100" width="700" height="120" class="panel" stroke="#facc15"/>
+<text x="600" y="2135" class="panel-header" fill="#facc15">TURNSTILE CAPTCHA</text>
+<line x1="250" y1="2150" x2="950" y2="2150" class="line" stroke="#facc1555"/>
+<text x="600" y="2175" class="text-sub" text-anchor="middle">State-changing endpoints: Register • Login • Forget Password • Contact • Report</text>
+<text x="600" y="2205" class="text-mono" text-anchor="middle">Browser Token ──▶ Cloudflare Siteverify ──▶ Valid / Invalid</text>
+<path d="M 600 2220 L 600 2250" class="line" marker-end="url(#arrow)"/>
+<!-- 5. Transport Deobfuscation -->
+<rect x="250" y="2260" width="700" height="110" class="panel" stroke="#facc15"/>
+<text x="600" y="2295" class="panel-header" fill="#facc15">TRANSPORT DEOBFUSCATION</text>
+<line x1="250" y1="2310" x2="950" y2="2310" class="line" stroke="#facc1555"/>
+<text x="600" y="2335" class="text-mono" text-anchor="middle">application/octet-stream</text>
+<text x="600" y="2355" class="text-main" text-anchor="middle">↓ Shared-key deobfuscation ↓</text>
+<path d="M 600 2370 L 600 2400" class="line" marker-end="url(#arrow)"/>
+<!-- 6. Strict Input Validation -->
+<rect x="250" y="2410" width="700" height="430" class="panel" stroke="#facc15"/>
+<text x="600" y="2445" class="panel-header" fill="#facc15">STRICT INPUT VALIDATION / SANITIZATION</text>
+<line x1="250" y1="2460" x2="950" y2="2460" class="line" stroke="#facc1555"/>
+<g transform="translate(600, 2480)">
+<text y="0" class="text-main" text-anchor="middle">Strict Key Allowlist</text>
+<text y="18" class="text-sub" text-anchor="middle">↓</text>
+<text y="36" class="text-main" text-anchor="middle">Type + Length Validation</text>
+<text y="54" class="text-sub" text-anchor="middle">↓</text>
+<text y="72" class="text-main" text-anchor="middle">Zero-Width Character Detection</text>
+<text y="90" class="text-sub" text-anchor="middle">↓</text>
+<text y="108" class="text-main" text-anchor="middle">GUC Email Validation</text>
+<text y="126" class="text-sub" text-anchor="middle">↓</text>
+<text y="144" class="text-main" text-anchor="middle">Phone Regex Validation</text>
+<text y="162" class="text-sub" text-anchor="middle">↓</text>
+<text y="180" class="text-main" text-anchor="middle">Name Structure Validation</text>
+<text y="198" class="text-sub" text-anchor="middle">↓</text>
+<text y="216" class="text-main" text-anchor="middle">HTML Tag Removal &amp; Entity Unescape</text>
+<text y="234" class="text-sub" text-anchor="middle">↓</text>
+<text y="252" class="text-main" text-anchor="middle">XSS Library Sanitization</text>
+<text y="270" class="text-sub" text-anchor="middle">↓</text>
+<text y="288" class="text-main" text-anchor="middle">Profanity / Leet-Speak Detection</text>
+<text y="306" class="text-sub" text-anchor="middle">↓</text>
+<text y="324" class="text-main" text-anchor="middle">Password Complexity</text>
+<text y="342" class="text-sub" text-anchor="middle" font-style="italic">(12+ chars / upper / lower / digit / special)</text>
+</g>
+<path d="M 600 2830 L 600 2860" class="line" marker-end="url(#arrow)"/>
+<!-- 7. Authentication Check -->
+<rect x="250" y="2870" width="700" height="180" class="panel" stroke="#facc15"/>
+<text x="600" y="2905" class="panel-header" fill="#facc15">AUTHENTICATION CHECK</text>
+<line x1="250" y1="2920" x2="950" y2="2920" class="line" stroke="#facc1555"/>
+<text x="600" y="2945" class="text-main" text-anchor="middle">Does endpoint require authentication?</text>
+<!-- Branching -->
+<path d="M 600 2955 L 600 2975" class="line"/>
+<path d="M 400 2975 L 800 2975" class="line"/>
+<path d="M 400 2975 L 400 3000" class="line" marker-end="url(#arrow)"/>
+<path d="M 800 2975 L 800 3000" class="line" marker-end="url(#arrow)"/>
+<text x="375" y="2995" class="panel-header" fill="#ef4444" text-anchor="end">NO</text>
+<text x="825" y="2995" class="panel-header" fill="#22c55e" text-anchor="start">YES</text>
+<text x="400" y="3030" class="text-main" text-anchor="middle">Continue route</text>
+<text x="800" y="3025" class="text-main" text-anchor="middle">Read session cookie</text>
+<text x="800" y="3045" class="text-sub" text-anchor="middle">SHA-256(session token) ──▶ Redis lookup</text>
+<path d="M 400 3070 L 400 3110" class="line" stroke="#facc15" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M 800 3070 L 800 3110" class="line" stroke="#facc15" stroke-width="3" marker-end="url(#arrow)"/>
+<!-- ④ APPLICATION / API LAYER -->
+<rect x="40" y="3120" width="1120" height="1310" class="layer-box" fill="#10b98108" stroke="#10b981" rx="16"/>
+<rect x="40" y="3120" width="1120" height="70" fill="#10b981" fill-opacity="0.1" rx="16"/>
+<text x="600" y="3155" class="layer-title" fill="#34d399">④ APPLICATION / API LAYER</text>
+<text x="600" y="3180" class="layer-subtitle">Hono Route Handlers</text>
+<!-- Route Handler Headers -->
+<rect x="100" y="3210" width="180" height="60" class="panel" stroke="#10b981"/>
+<text x="190" y="3240" class="panel-header" fill="#34d399">AUTH SERVICE</text>
+<rect x="310" y="3210" width="180" height="60" class="panel" stroke="#10b981"/>
+<text x="400" y="3240" class="panel-header" fill="#34d399">SWAP ENGINE</text>
+<rect x="520" y="3210" width="180" height="60" class="panel" stroke="#10b981"/>
+<text x="610" y="3240" class="panel-header" fill="#34d399">PROFILE / USER</text>
+<rect x="730" y="3210" width="180" height="60" class="panel" stroke="#10b981"/>
+<text x="820" y="3240" class="panel-header" fill="#34d399">SUPPORT</text>
+<rect x="940" y="3210" width="160" height="60" class="panel" stroke="#10b981"/>
+<text x="1020" y="3240" class="panel-header" fill="#34d399">OTHER ROUTES</text>
+<path d="M 190 3270 L 190 3300" class="line" marker-end="url(#arrow)"/>
+<path d="M 400 3270 L 400 3300" class="line" marker-end="url(#arrow)"/>
+<path d="M 610 3270 L 610 3300" class="line" marker-end="url(#arrow)"/>
+<path d="M 820 3270 L 820 3300" class="line" marker-end="url(#arrow)"/>
+<!-- Auth Engine Box -->
+<rect x="100" y="3320" width="500" height="360" class="panel" stroke="#34d399"/>
+<text x="340" y="3355" class="panel-header" fill="#34d399">AUTHENTICATION ENGINE</text>
+<line x1="100" y1="3370" x2="600" y2="3370" class="line" stroke="#34d39955"/>
+<g transform="translate(130, 3390)">
+<text font-weight="bold" fill="#f0f6fc">REGISTER</text>
+<text y="20" fill="#8b949e"><tspan fill="#58a6ff">├── </tspan>GUC institutional email validation</text>
+<text y="40" fill="#8b949e"><tspan fill="#58a6ff">├── </tspan>Academic structure validation</text>
+<text y="60" fill="#8b949e"><tspan fill="#58a6ff">├── </tspan>Permanent identity lookup</text>
+<text y="80" fill="#8b949e"><tspan fill="#58a6ff">├── </tspan>Phone / WhatsApp validation</text>
+<text y="100" fill="#8b949e"><tspan fill="#58a6ff">└── </tspan>Verification token</text>
+<text y="130" font-weight="bold" fill="#f0f6fc">LOGIN</text>
+<text y="150" fill="#8b949e"><tspan fill="#58a6ff">├── </tspan>Identity lookup / Ban check</text>
+<text y="170" fill="#8b949e"><tspan fill="#58a6ff">├── </tspan>Password verification</text>
+<text y="190" fill="#8b949e"><tspan fill="#58a6ff">├── </tspan>2FA status check</text>
+<text y="210" fill="#8b949e"><tspan fill="#58a6ff">└── </tspan>Session creation</text>
+<text x="270" y="130" font-weight="bold" fill="#f0f6fc">PASSWORD RESET</text>
+<text x="270" y="150" fill="#8b949e"><tspan fill="#58a6ff">├── </tspan>Reset token</text>
+<text x="270" y="170" fill="#8b949e"><tspan fill="#58a6ff">├── </tspan>Password update</text>
+<text x="270" y="190" fill="#8b949e"><tspan fill="#58a6ff">└── </tspan>Invalidate sessions</text>
+<text y="250" font-weight="bold" fill="#f0f6fc">LOGOUT</text>
+<text y="270" fill="#8b949e"><tspan fill="#58a6ff">└── </tspan>Redis deletion + DB purge</text>
+</g>
+<!-- Password Security Box -->
+<rect x="620" y="3320" width="480" height="360" class="panel" stroke="#34d399"/>
+<text x="860" y="3355" class="panel-header" fill="#34d399">PASSWORD SECURITY</text>
+<line x1="620" y1="3370" x2="1100" y2="3370" class="line" stroke="#34d39955"/>
+<g transform="translate(860, 3400)" text-anchor="middle">
+<text class="text-main" font-weight="bold">Plaintext Password</text>
+<path d="M 0 10 L 0 35" class="line" marker-end="url(#arrow)"/>
+<text y="55" class="panel-header" fill="#60a5fa">Web Crypto SHA-256 pre-hash</text>
+<path d="M 0 65 L 0 90" class="line" marker-end="url(#arrow)"/>
+<text y="110" class="panel-header" fill="#facc15">PBKDF2</text>
+<path d="M 0 140 L 20 140" class="line"/>
+<text x="30" y="145" class="text-sub" text-anchor="start">secure salt</text>
+<path d="M 0 165 L 20 165" class="line"/>
+<text x="30" y="170" class="text-sub" text-anchor="start">high iteration count</text>
+<path d="M 0 190 L 20 190" class="line"/>
+<text x="30" y="195" class="text-sub" text-anchor="start">64-byte output</text>
+<path d="M 0 120 L 0 230" class="line" marker-end="url(#arrow)"/>
+<text y="255" class="text-main" font-weight="bold" fill="#22c55e">Stored Password Hash (DB)</text>
+</g>
+<!-- Device-Bound Session Box -->
+<rect x="100" y="3710" width="480" height="400" class="panel" stroke="#34d399"/>
+<text x="340" y="3745" class="panel-header" fill="#34d399">DEVICE-BOUND SESSION ENGINE</text>
+<line x1="100" y1="3760" x2="580" y2="3760" class="line" stroke="#34d39955"/>
+<g transform="translate(340, 3780)" text-anchor="middle">
+<text font-weight="bold" fill="#f0f6fc">First Visit</text>
+<path d="M 0 10 L 0 30" class="line" marker-end="url(#arrow)"/>
+<text y="45" class="text-sub">Generate secure random device secret</text>
+<text y="65" class="text-mono">httpOnly + Secure + SameSite=Lax Cookie</text>
+<path d="M 0 75 L 0 95" class="line" marker-end="url(#arrow)"/>
+<text y="115" class="text-main">Fingerprint = SHA-256(UA + Lang + Secret)</text>
+<text y="165" font-weight="bold" fill="#f0f6fc">EVERY AUTHENTICATED REQUEST</text>
+<text y="185" class="text-sub">Read session cookie &amp; recalculate fingerprint</text>
+<path d="M 0 195 L 0 215" class="line"/>
+<path d="M -120 215 L 120 215" class="line"/>
+<path d="M -120 215 L -120 235" class="line" marker-end="url(#arrow)"/>
+<path d="M 120 215 L 120 235" class="line" marker-end="url(#arrow)"/>
+<text x="-120" y="255" class="panel-header" fill="#22c55e">MATCH</text>
+<text x="-120" y="275" class="text-main">Continue request</text>
+<text x="120" y="255" class="panel-header" fill="#ef4444">MISMATCH</text>
+<text x="120" y="275" class="text-main">Invalidate + 401</text>
+</g>
+<!-- Permanent Identity / Ban Box -->
+<rect x="620" y="3710" width="480" height="400" class="panel" stroke="#34d399"/>
+<text x="860" y="3745" class="panel-header" fill="#34d399">PERMANENT IDENTITY / BAN ENGINE</text>
+<line x1="620" y1="3760" x2="1100" y2="3760" class="line" stroke="#34d39955"/>
+<g transform="translate(860, 3775)" text-anchor="middle">
+<text font-weight="bold" fill="#f0f6fc">Verified GUC Email</text>
+<path d="M 0 10 L 0 35" class="line" marker-end="url(#arrow)"/>
+<text y="55" class="panel-header" fill="#facc15">Immutable 10-Digit ID</text>
+<path d="M 0 65 L 0 95" class="line"/>
+<path d="M -100 80 L 100 80" class="line"/>
+<path d="M -100 80 L -100 110" class="line" marker-end="url(#arrow)"/>
+<path d="M 0 80 L 0 110" class="line" marker-end="url(#arrow)"/>
+<path d="M 100 80 L 100 110" class="line" marker-end="url(#arrow)"/>
+<text x="-100" y="130" class="text-main">Email</text>
+<text x="0" y="130" class="text-main">Phone</text>
+<text x="100" y="130" class="text-main">WhatsApp</text>
+<path d="M -100 145 L -100 170" class="line"/>
+<path d="M 0 145 L 0 170" class="line"/>
+<path d="M 100 145 L 100 170" class="line"/>
+<path d="M -100 170 L 100 170" class="line"/>
+<path d="M 0 170 L 0 200" class="line" marker-end="url(#arrow)"/>
+<rect x="-80" y="210" width="160" height="40" rx="4" fill="#161b22" stroke="#ef4444"/>
+<text y="235" font-weight="bold" fill="#fca5a5">Global Ban Record</text>
+<text y="280" class="text-sub">BAN CHECKPOINTS:</text>
+<text y="300" class="text-main">Registration → Login → Password Reset</text>
+</g>
+<!-- GUC Data Validation Box -->
+<rect x="100" y="4120" width="1000" height="300" class="panel" stroke="#34d399"/>
+<text x="600" y="4155" class="panel-header" fill="#34d399">GUC DATA VALIDATION</text>
+<line x1="100" y1="4170" x2="1100" y2="4170" class="line" stroke="#34d39955"/>
+<g transform="translate(600, 4190)" text-anchor="middle">
+<text font-weight="bold" fill="#f0f6fc">Faculty</text>
+<path d="M 0 10 L 0 25" class="line"/>
+<path d="M -250 25 L 250 25" class="line"/>
+<path d="M -250 25 L -250 40" class="line" marker-end="url(#arrow)"/>
+<path d="M 0 25 L 0 40" class="line" marker-end="url(#arrow)"/>
+<path d="M 250 25 L 250 40" class="line" marker-end="url(#arrow)"/>
+<rect x="-320" y="45" width="140" height="30" rx="4" fill="#161b22" stroke="#8b949e"/>
+<text x="-250" y="65" class="text-main">Engineering</text>
+<rect x="-70" y="45" width="140" height="30" rx="4" fill="#161b22" stroke="#8b949e"/>
+<text x="0" y="65" class="text-main">Pharmacy &amp; Bio</text>
+<rect x="180" y="45" width="140" height="30" rx="4" fill="#161b22" stroke="#8b949e"/>
+<text x="250" y="65" class="text-main">Management</text>
+<path d="M -250 80 L -250 95" class="line"/>
+<path d="M 0 80 L 0 95" class="line"/>
+<path d="M 250 80 L 250 95" class="line"/>
+<path d="M -250 95 L 250 95" class="line"/>
+<path d="M 0 95 L 0 110" class="line" marker-end="url(#arrow)"/>
+<text y="125" font-weight="bold" fill="#f0f6fc">Major Validation</text>
+<path d="M 0 135 L 0 150" class="line" marker-end="url(#arrow)"/>
+<text y="165" class="text-main">Semester Constraints</text>
+<path d="M 0 175 L 0 190" class="line" marker-end="url(#arrow)"/>
+<rect x="-100" y="195" width="200" height="30" rx="4" fill="#161b22" stroke="#10b981"/>
+<text y="215" font-weight="bold" fill="#34d399">Valid GUC State</text>
+</g>
+<!-- Cross-layer arrows to backend engines -->
+<path d="M 270 4420 L 270 4450" class="line" stroke="#10b981" stroke-width="3" marker-end="url(#arrow-emerald)"/>
+<path d="M 600 4420 L 600 4450" class="line" stroke="#10b981" stroke-width="3" marker-end="url(#arrow-emerald)"/>
+<path d="M 930 4420 L 930 4450" class="line" stroke="#10b981" stroke-width="3" marker-end="url(#arrow-emerald)"/>
+<!-- ⑤ SWAP / MATCHING ENGINE -->
+<rect x="100" y="4450" width="320" height="420" class="layer-box" fill="#8b5cf608" stroke="#8b5cf6" rx="16"/>
+<rect x="100" y="4450" width="320" height="70" fill="#8b5cf6" fill-opacity="0.1" rx="16"/>
+<text x="260" y="4490" class="panel-header" fill="#a78bfa">⑤ SWAP / MATCHING</text>
+<g transform="translate(260, 4550)" text-anchor="middle">
+<text font-weight="bold" fill="#f0f6fc">Student Pool</text>
+<path d="M 0 10 L 0 50" class="line" marker-end="url(#arrow)"/>
+<rect x="-80" y="55" width="160" height="60" class="panel" stroke="#8b5cf6"/>
+<text y="80" class="text-main">Graph Nodes</text>
+<text y="100" class="text-sub">(Students)</text>
+<path d="M 0 120 L 0 160" class="line" marker-end="url(#arrow)"/>
+<text y="180" class="panel-header" fill="#a78bfa">Desired vs Current</text>
+<text y="200" class="text-sub">Matching Algorithm</text>
+<rect x="-100" y="220" width="200" height="40" rx="6" fill="#161b22" stroke="#8b5cf6"/>
+<text y="245" class="text-main" font-weight="bold">Successful Swap Pair</text>
+</g>
+<!-- ⑥ SESSION / TOKEN ENGINE -->
+<rect x="440" y="4450" width="320" height="420" class="layer-box" fill="#8b5cf608" stroke="#8b5cf6" rx="16"/>
+<rect x="440" y="4450" width="320" height="70" fill="#8b5cf6" fill-opacity="0.1" rx="16"/>
+<text x="600" y="4490" class="panel-header" fill="#a78bfa">⑥ SESSION / TOKEN</text>
+<g transform="translate(600, 4550)" text-anchor="middle">
+<text font-weight="bold" fill="#f0f6fc">SESSION</text>
+<path d="M 0 10 L 0 50" class="line" marker-end="url(#arrow)"/>
+<text y="70" class="panel-header" fill="#a78bfa">Secure Random Token</text>
+<text y="90" class="text-mono">Crypto.getRandomValues()</text>
+<path d="M 0 100 L 0 140" class="line" marker-end="url(#arrow)"/>
+<rect x="-90" y="145" width="180" height="40" rx="6" fill="#161b22" stroke="#8b949e"/>
+<text y="170" class="text-mono">SHA-256(token)</text>
+<path d="M 0 190 L 0 230" class="line" marker-end="url(#arrow)"/>
+<rect x="-120" y="235" width="240" height="50" rx="6" fill="#161b22" stroke="#8b5cf6"/>
+<text y="265" class="text-mono" font-size="16px" fill="#c4b5fd">redis → session:{"{hash}"}</text>
+</g>
+<!-- ⑦ USER MANAGEMENT -->
+<rect x="780" y="4450" width="320" height="420" class="layer-box" fill="#8b5cf608" stroke="#8b5cf6" rx="16"/>
+<rect x="780" y="4450" width="320" height="70" fill="#8b5cf6" fill-opacity="0.1" rx="16"/>
+<text x="940" y="4490" class="panel-header" fill="#a78bfa">⑦ USER MANAGEMENT</text>
+<g transform="translate(940, 4550)" text-anchor="middle">
+<text font-weight="bold" fill="#f0f6fc">Profile Update Request</text>
+<path d="M 0 10 L 0 50" class="line" marker-end="url(#arrow)"/>
+<text y="70" class="panel-header" fill="#a78bfa">Data Validation</text>
+<path d="M 0 80 L 0 120" class="line" marker-end="url(#arrow)"/>
+<text y="140" class="text-main">GUC Structure Enforcement</text>
+<text y="160" class="text-sub">Semester / Major Match</text>
+<path d="M 0 170 L 0 210" class="line" marker-end="url(#arrow)"/>
+<rect x="-120" y="215" width="240" height="50" rx="6" fill="#161b22" stroke="#8b5cf6"/>
+<text y="245" class="text-main" font-weight="bold">Profanity &amp; Policy Check</text>
+<text y="295" class="text-main" fill="#22c55e">✓ Database Update</text>
+</g>
+</svg>
